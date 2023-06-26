@@ -53,16 +53,36 @@ const teamMembers = [
     sul DOM sottoforma di stringhe, trasformare la stringa foto in una immagine effettiva.
 */
 
+//  const teamContainer = document.querySelector('#team-container');
+
+//  teamMembers.forEach(member => {
+//     const memberInfo = `
+//         <div class="member-card">
+//             <img src="img/${member.foto}" alt="${member.nome}">
+//             <h3>${member.nome}</h3>
+//             <p>${member.ruolo}</p>
+//          </div>
+//     `;
+//     teamContainer.innerHTML += memberInfo;
+//  });
+
+/* 
+    BONUS 2: Organizzare i singoli membri in card/schede.
+*/
+
 const teamContainer = document.querySelector('#team-container');
 
 teamMembers.forEach(member => {
-    const memberInfo = `
-        <div class="member-card">
-            <img src="img/${member.foto}" alt="${member.nome}">
-            <h3>${member.nome}</h3>
-            <p>${member.ruolo}</p>
+  const memberCard = `
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/${member.foto}" class="card-img-top" alt="${member.nome}">
+        <div class="card-body">
+          <h5 class="card-title">${member.nome}</h5>
+          <p class="card-text">${member.ruolo}</p>
         </div>
-    `;
-    teamContainer.innerHTML += memberInfo;
+      </div>
+    </div>
+  `;
+  teamContainer.innerHTML += memberCard;
 });
-

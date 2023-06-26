@@ -9,8 +9,9 @@
 :root {
     /* Color Palette */
     
-    --light_color:#FFFFFF ;
-    --dark_color: #0A0A0A ;
-
-}
-
+    --light_color:#FFFFFF;
+    --dark_color: #0A0A0A;
+    --primary_color: #D1D3C4;
+    --secondary_color: #B6BAA1;
+    --hover_color: #7B815F;
+}   

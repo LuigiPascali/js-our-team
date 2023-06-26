@@ -1,3 +1,20 @@
 /* 
     MAIN
 */
+
+body {background: linear-gradient(to bottom, var(--primary_color), var(--light_color));}
+
+h2, 
+p {color: var(--light_color);}
+
+.card {margin-top: 2.5rem;}
+
+.card-body {text-align: center;}
+
+.card-text {color: var(--dark_color);}
+
+.card-img-top img {width: 100%;}
+
+.btn {background-color: var(--secondary_color);border-color: var(--secondary_color);color: var(--light_color);font-size: 16px;font-weight: bold;padding: 10px 20px;border-radius: 5px;transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;}
+  
+  .btn:hover {background-color: var(--hover_color);border-color: var(--hover_color);color: var(--light_color);}
