@@ -1,5 +1,5 @@
 /* 
-    MILESTONE 1: creazione di un array contente sei oggetti,
+    MILESTONE 0: creazione di un array contente sei oggetti,
     ognuno dei quali contenente tre proprietà.
 */    
 
@@ -37,3 +37,7 @@ const teamMembers = [
   ];    
 
   console.log(teamMembers);
+
+/* 
+MILESTONE 1: 
+
