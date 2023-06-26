@@ -36,8 +36,13 @@ const teamMembers = [
     }
   ];    
 
-  console.log(teamMembers);
+//   console.log(teamMembers);
 
 /* 
-MILESTONE 1: 
+    MILESTONE 1: Stampa in console con metodo forEach() 
+    di ogni membro del team.
+*/
 
+teamMembers.forEach(member => {
+    console.log(`Nome: ${member.nome}, Ruolo: ${member.ruolo}, Foto: ${member.foto}`);
+});
