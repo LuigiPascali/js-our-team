@@ -70,9 +70,13 @@ const teamMembers = [
     BONUS 2: Organizzare i singoli membri in card/schede.
 */
 
+// Seleziono il container delle card
+
 const teamContainer = document.querySelector('#team-container');
 
+// Itero attraverso ogni membro del team
 teamMembers.forEach(member => {
+    // Creo un elemento div per la card 
   const memberCard = `
     <div class="col-md-4">
       <div class="card">
@@ -84,5 +88,7 @@ teamMembers.forEach(member => {
       </div>
     </div>
   `;
+
+// Aggiungo l'elemento div della card al contenitore delle card del tema
   teamContainer.innerHTML += memberCard;
 });
