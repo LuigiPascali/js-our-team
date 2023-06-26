@@ -43,6 +43,26 @@ const teamMembers = [
     di ogni membro del team.
 */
 
+// teamMembers.forEach(member => {
+//     console.log(`Nome: ${member.nome}, Ruolo: ${member.ruolo}, Foto: ${member.foto}`);
+// });
+
+
+/*
+    MILESTONE 2 + BONUS 1: Stampa le informazioni di nome, ruolo e la stringa della foto
+    sul DOM sottoforma di stringhe, trasformare la stringa foto in una immagine effettiva.
+*/
+
+const teamContainer = document.querySelector('#team-container');
+
 teamMembers.forEach(member => {
-    console.log(`Nome: ${member.nome}, Ruolo: ${member.ruolo}, Foto: ${member.foto}`);
+    const memberInfo = `
+        <div class="member-card">
+            <img src="img/${member.foto}" alt="${member.nome}">
+            <h3>${member.nome}</h3>
+            <p>${member.ruolo}</p>
+        </div>
+    `;
+    teamContainer.innerHTML += memberInfo;
 });
+
