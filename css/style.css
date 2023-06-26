@@ -7,14 +7,17 @@ body {background: linear-gradient(to bottom, var(--primary_color), var(--light_c
 h2, 
 p {color: var(--light_color);}
 
-.card {margin-top: 2.5rem;}
+.card {margin-top: 2.5rem;padding: .625rem;background: linear-gradient(to top, var(--primary_color), var(--light_color));}
 
-.card-body {text-align: center;}
+.card:hover{box-shadow: 0 0 .625rem rgba(0,0,0,0.3);transform: scale(1.05);}
 
-.card-text {color: var(--dark_color);}
+.card-body {text-align: center;color: var(--light_color);}
+
+.card-text {color: var(--light_color);font-size: large;}
 
 .card-img-top img {width: 100%;}
 
 .btn {background-color: var(--secondary_color);border-color: var(--secondary_color);color: var(--light_color);font-size: 1rem;font-weight: bold;padding: .625rem 1.25rem;border-radius: .3125rem;transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;}
   
 .btn:hover {background-color: var(--hover_color);border-color: var(--hover_color);color: var(--light_color);}
+

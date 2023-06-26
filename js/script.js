@@ -82,7 +82,7 @@ teamMembers.forEach(member => {
       <div class="card">
         <img src="img/${member.foto}" class="card-img-top" alt="${member.nome}">
         <div class="card-body">
-          <h5 class="card-title">${member.nome}</h5>
+          <h3 class="card-title">${member.nome}</h3>
           <p class="card-text">${member.ruolo}</p>
         </div>
       </div>
@@ -92,3 +92,6 @@ teamMembers.forEach(member => {
 // Aggiungo l'elemento div della card al contenitore delle card del tema
   teamContainer.innerHTML += memberCard;
 });
+
+
+
